@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-top">
+        <div id="logo-container">
+          <ul>
+            <li>
+              <a href=""
+                ><img src="/assets/airEuropa-logo.svg" alt="Air Europa Logo"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="/assets/skyteam-logo.svg" alt="Skyteam logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="options">
+          <ul>
+            <li class="option-item">
+              <a href=""
+                ><img src="/assets/language.png" alt="Language icon" />España |
+                es</a
+              >
+            </li>
+
+            <li class="option-item">
+              <a href=""
+                ><img src="/assets/searcher.png" alt="Searcher logo" />
+                Preguntas frecuentes</a
+              >
+            </li>
+
+            <li class="option-item">
+              <a href=""
+                ><img
+                  src="/assets/aeroplane.png"
+                  alt="Aeroplane icon"
+                />Gestiona tu reserva</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="user-functions">
+          <ul>
+            <li><a href="" id="Check-in">Check-in</a></li>
+            <li><a href="">Regístrate</a></li>
+            <li id="button-li">
+              <button id="account">Mi cuenta</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <button onclick="navbarclick(ulOffert$$);">Ofertas</button>
+          <ul id="ofert-list">
+            <div>
+              <li><a href="">Mejores precios desde España</a></li>
+              <li><a href="">Vuelos a Mallorca</a></li>
+              <li><a href="">Vuelos a Madrid</a></li>
+              <li><a href="">Vuelos a Tenerife</a></li>
+              <li><a href="">Vuelos a Nueva York</a></li>
+              <li><a href="">Vuelos a Gran Canaria</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button onclick="navbarclick(ulManageAccount$$);">
+            Gestiona tu cuenta
+          </button>
+          <ul id="manage-account-list">
+            <div>
+              <li><a href="">Accede a tu reserva</a></li>
+              <li><a href="">Añadir Extras</a></li>
+              <li><a href="">Cambio Vuelo</a></li>
+              <li><a href="">Check in online</a></li>
+              <li><a href="">Solicitar Factura</a></li>
+              <li><a href="">Asistencia movilidad reducida</a></li>
+              <li><a href="">Contratar seguros</a></li>
+              <li><a href="">Imprimir Billete de Tren</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button onclick="navbarclick(ulBeforeFlying$$);">
+            Antes de volar
+          </button>
+          <ul id="before-flying-list">
+            <div>
+              <li><a href="">Información para volar</a></li>
+              <li><a href="">Equipaje</a></li>
+              <li><a href="">Pasajeros</a></li>
+              <li><a href="">Seguridad a bordo</a></li>
+              <li><a href="">Documentación</a></li>
+              <li><a href="">Condiciones</a></li>
+              <li><a href="">Tarifas y servicios</a></li>
+              <li><a href="">Comunicados</a></li>
+              <li><a href="">COVID-19</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button onclick="navbarclick(ulExperienceAE$$);">
+            Experiencia Air Europa
+          </button>
+          <ul id="experience-AE-list">
+            <div>
+              <li><a href="">Destinos</a></li>
+              <li><a href="">Servicios</a></li>
+              <li><a href="">Tarifas</a></li>
+              <li><a href="">Flota</a></li>
+              <li><a href="">Salas VIP</a></li>
+              <li><a href="">Vuela en Premium</a></li>
+              <li><a href="">Business</a></li>
+              <li><a href="">Información corporativa</a></li>
+              <li><a href="">Alianzas</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button onclick="navbarclick(ulHelp$$);">¿Necesitas ayuda?</button>
+          <ul id="help-list">
+            <div>
+              <li><a href="">Atención al cliente</a></li>
+              <li><a href="">Consulta tu reserva</a></li>
+              <li><a href="">Volar en grupo</a></li>
+              <li><a href="">Reclamaciones,felicitaciones,sugerencias</a></li>
+              <li><a href="">Preguntas frecuentes</a></li>
+            </div>
+          </ul>
+        </li>
+
+        <li>
+          <button onclick="navbarclick(ulAESum$$);">Air Europa SUMA</button>
+          <ul id="AE-sum-list">
+            <div>
+              <li><a href="">Air Europa SUMA</a></li>
+              <li><a href="">Mi Cuenta</a></li>
+              <li><a href="">Nuestro Programa</a></li>
+              <li><a href="">Cómo conseguir Millas</a></li>
+              <li><a href="">Cómo utilizar Millas</a></li>
+              <li><a href="">Preguntas frecuentes</a></li>
+              <li><a href="">Atención al cliente</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <button onclick="navbarclick(ulMyAccount$$);">Mi cuenta</button>
+          <ul id="my-account-list">
+            <div>
+              <li><a href="">Mi Perfil</a></li>
+              <li><a href="">Mis Millas</a></li>
+              <li><a href="">Mis Reservas</a></li>
+              <li><a href="">Mis Beneficios</a></li>
+              <li><a href="">Solicitar Millas no anotadas</a></li>
+            </div>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div id="check-normative">
+        <img src="/assets/info-icon.png" alt="infoicon" />
+        <p>
+          Antes de viajar recuerda consultar
+          <a href="">las normas de tu destino</a>.
+        </p>
+      </div>
+    </section>
+    <section id="choose-fligth">
+      <article id="carrousel">
+        <!-- <div class="arrow" onclick="carrousel()">&#60</div> -->
+        <div id="carrousel-element1">
+          <h1>El Invierno se pasa volando</h1>
+          <button class="buy-now">¡Compra ya!</button>
+        </div>
+        <!-- <div class="arrow" onclick="carrousel()">&#62</div> -->
+      </article>
+      <article id="search-fligth">
+        <div id="title-container">
+          <img src="./assets/aeroplane-takeoff.png" alt="aeroplane takeoff" />
+          <p>VUELOS</p>
+        </div>
+        <div id="search-fligth">
+          <div id="selection-bar">
+            <ul id="fligth-mode">
+              <li class="fligth-item">Ida-Vuelta</li>
+              <li class="fligth-item">Sólo ida</li>
+              <li class="fligth-item">Multidestinos</li>
+            </ul>
+
+            <div>
+              <input type="checkbox" class="checkbox" />
+              <label for="">Pagar con Bono AE o VALE </label>
+              <img src="./assets/ae-icon.png" alt="Air-Europa-ico" />
+            </div>
+            <div>
+              <input type="checkbox" class="checkbox" />
+              <label for="">Utilizar mis Millas SUMA</label>
+            </div>
+          </div>
+          <div id="choose-country">
+            <input type="text" placeholder="Desde" class="text" />
+            <input type="text" placeholder="Hasta" class="text" />
+            <button>Buscar</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="buttons-fligth">
+      <button><img src="./assets/check-in.png" alt="check-in icon">Haz Check-in</button>
+      <button><img src="./assets/reservation.png" alt="reservation icon">Gestiona tu reserva</button>
+      <button><img src="./assets/fligth-info.png" alt="info fligth icon">Información de Vuelos</button>
+    </section>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

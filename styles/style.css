@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@100;300;400&family=Merriweather+Sans:wght@300&family=Poppins&family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Merriweather+Sans:wght@300&family=Rubik+Mono+One&display=swap");
+header {
+  display: flex;
+  justify-content: center;
+}
+header #header-top {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+header #header-top #logo-container ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header #header-top #options {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+header #header-top #options ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 7rem;
+}
+header #header-top #options ul .option-item {
+  border-right: 1px solid gray;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+header #header-top #options ul .option-item a {
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  padding: 6% 3% 6% 3%;
+  margin: 10px;
+  font-size: 0.7em;
+}
+header #header-top #options ul .option-item a img {
+  width: 15%;
+  margin-right: 2px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+header #header-top #options ul .option-item :hover {
+  background-color: #c7c7c7;
+}
+header #header-top #user-functions {
+  width: 60%;
+}
+header #header-top #user-functions ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header #header-top #user-functions ul li {
+  border-right: 1px solid gray;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+header #header-top #user-functions ul li #Check-in {
+  color: #b428cd;
+}
+header #header-top #user-functions ul li a {
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  padding: 5% 7% 5% 7%;
+  margin: 10px;
+  font-size: 1rem;
+}
+header #header-top #user-functions ul li :hover {
+  background-color: #f6f6f6;
+}
+header #header-top #user-functions ul #button-li {
+  border-right: none;
+  display: flex;
+  align-items: center;
+}
+header #header-top #user-functions ul #button-li #account {
+  background: #2c69e1;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 90%;
+  height: 2rem;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+nav ul li {
+  width: 11%;
+  text-align: center;
+}
+nav ul li button {
+  background: none;
+  border-radius: 5px;
+  border: none;
+  height: 2rem;
+  cursor: pointer;
+  font-size: 12px;
+}
+nav ul li ul {
+  background-color: #f6f6f6;
+  margin: auto;
+  width: 84rem;
+  display: none;
+  margin-left: 3rem;
+}
+nav ul li ul div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3rem;
+  width: 90%;
+  margin: 0 10px;
+}
+nav ul li ul div li {
+  width: 14%;
+}
+nav ul li ul div li a {
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  background-color: #00fff0;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+section #check-normative {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+}
+section #check-normative img {
+  width: 1rem;
+  margin: 0 10px;
+  object-fit: contain;
+  background: none;
+}
+section #check-normative p {
+  color: #154e83;
+}
+section #check-normative p a {
+  color: blue;
+}
+
+#choose-fligth {
+  background-image: url("https://www.aireuropa.com/dam/aea/home/web/hero-banner/promo/allways-on/hero-banner-Allways-on-23-01-23-1920x650.jpg");
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#choose-fligth #carrousel {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+#choose-fligth #carrousel .arrow {
+  background-color: rgb(97, 92, 92);
+  border-radius: 50%;
+  height: 2.3rem;
+  width: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+#choose-fligth #carrousel #carrousel-element1 {
+  width: 73rem;
+  display: flex;
+  flex-direction: column;
+}
+#choose-fligth #carrousel #carrousel-element1 h1 {
+  color: white;
+  font-size: 2.9rem;
+  font-family: "Poppins", sans-serif;
+}
+#choose-fligth #carrousel #carrousel-element1 .buy-now {
+  background: none;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 15%;
+  height: 3rem;
+  cursor: pointer;
+  border: 1px solid white;
+}
+#choose-fligth #carrousel #carrousel-element1 .buy-now:hover {
+  border: 1px solid grey;
+  color: grey;
+}
+#choose-fligth #search-fligth #title-container {
+  width: 73rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 5px solid #2c69e1;
+  display: flex;
+  align-items: center;
+}
+#choose-fligth #search-fligth #title-container img {
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+}
+#choose-fligth #search-fligth #title-container p {
+  font-size: 17px;
+}
+#choose-fligth #search-fligth #search-fligth {
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  height: 15rem;
+}
+#choose-fligth #search-fligth #search-fligth #selection-bar {
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+#choose-fligth #search-fligth #search-fligth #selection-bar #fligth-mode {
+  color: #2c69e1;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid black;
+  list-style: none;
+  display: flex;
+}
+#choose-fligth #search-fligth #search-fligth #selection-bar #fligth-mode .fligth-item {
+  margin: 5px;
+}
+#choose-fligth #search-fligth #search-fligth div {
+  display: flex;
+  align-items: center;
+}
+#choose-fligth #search-fligth #search-fligth div .checkbox {
+  width: 40px;
+}
+#choose-fligth #search-fligth #search-fligth #choose-country {
+  display: flex;
+  justify-content: space-around;
+}
+#choose-fligth #search-fligth #search-fligth #choose-country .text {
+  height: 4rem;
+  width: 21rem;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin-right: 3px;
+}
+#choose-fligth #search-fligth #search-fligth #choose-country ::placeholder {
+  font-size: 1.6rem;
+}
+#choose-fligth #search-fligth #search-fligth #choose-country button {
+  background: #2c69e1;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  width: 20%;
+  height: 3rem;
+  cursor: pointer;
+}
+
+#buttons-fligth {
+  background-color: #f6f6f6;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#buttons-fligth button {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+  border: none;
+  color: #2c69e1;
+  width: 20%;
+  height: 4rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,82 @@
+@import "mixin.scss";
+
+header {
+  display: flex;
+  justify-content: center;
+
+  #header-top {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    #logo-container {
+      ul {
+        @include ul-element;
+      }
+    }
+    #options {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: flex-end;
+      ul {
+        @include ul-element;
+        height: 7rem;
+
+        .option-item {
+          @include li-element(10rem);
+          height: 1.5rem;
+          display: flex;
+          align-items: center;
+          a {
+            text-decoration: none;
+            color: black;
+            @include anchords(6% 3% 6% 3%, 0.7em);
+            img {
+              width: 15%;
+              margin-right: 2px;
+              aspect-ratio: 3/2;
+              object-fit: contain;
+              mix-blend-mode: color-burn;
+            }
+          }
+          :hover {
+            background-color: #c7c7c7;
+          }
+        }
+      }
+    }
+    #user-functions {
+      width: 60%;
+      ul {
+        @include ul-element;
+        li {
+          @include li-element(50%);
+          height: 1.5rem;
+          display: flex;
+          align-items: center;
+          #Check-in {
+            color: #b428cd;
+          }
+        }
+        li {
+          a {
+            text-decoration: none;
+            @include anchords(5% 7% 5% 7%, 1rem);
+          }
+          :hover {
+            background-color: #f6f6f6;
+          }
+        }
+        #button-li {
+          border-right: none;
+
+          display: flex;
+          align-items: center;
+          #account {
+            @include buttons(#2c69e1, 5px, white, 90%, 2rem);
+          }
+        }
+      }
+    }
+  }
+}

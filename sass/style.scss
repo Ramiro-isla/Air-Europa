@@ -1,0 +1,12 @@
+@use "header.scss";
+@use "navbar.scss";
+@use "checkNormative.scss";
+@use "choose-fligth.scss";
+@use "buttons-fligth.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Merriweather+Sans:wght@300&family=Rubik+Mono+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}

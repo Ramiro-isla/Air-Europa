@@ -1,0 +1,18 @@
+@import "mixin.scss";
+
+#buttons-fligth {
+  background-color: #f6f6f6;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include buttons(white, 10px, #2c69e1, 20%, 4rem);
+    border: 1px solid black;
+
+  }
+}

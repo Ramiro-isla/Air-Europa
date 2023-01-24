@@ -1,0 +1,109 @@
+@import "mixin.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@100;300;400&family=Merriweather+Sans:wght@300&family=Poppins&family=Rubik+Mono+One&display=swap");
+#choose-fligth {
+  background-image: url("https://www.aireuropa.com/dam/aea/home/web/hero-banner/promo/allways-on/hero-banner-Allways-on-23-01-23-1920x650.jpg");
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  #carrousel {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    .arrow {
+      background-color: rgb(97, 92, 92);
+      border-radius: 50%;
+      height: 2.3rem;
+      width: 2.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+    }
+    #carrousel-element1 {
+      width: 73rem;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        color: white;
+        font-size: 2.9rem;
+        font-family: "Poppins", sans-serif;
+      }
+      .buy-now {
+        @include buttons(none, 5px, white, 15%, 3rem);
+        border: 1px solid white;
+      }
+      .buy-now:hover {
+        border: 1px solid grey;
+        color: grey;
+      }
+    }
+  }
+  #search-fligth {
+    #title-container {
+      width: 73rem;
+      height: 3rem;
+      background-color: white;
+      border-radius: 5px 5px 0 0;
+      border-bottom: 5px solid #2c69e1;
+      display: flex;
+      align-items: center;
+      img {
+        width: 20px;
+        height: 20px;
+        margin: 0 3px;
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+    #search-fligth {
+      background-color: white;
+      border-radius: 0 0 5px 5px;
+      height: 15rem;
+      #selection-bar {
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        #fligth-mode {
+          color: #2c69e1;
+          font-weight: bold;
+          border-radius: 5px;
+          border: 2px solid black;
+          list-style: none;
+          display: flex;
+          .fligth-item {
+            margin: 5px;
+          }
+        }
+      }
+      div {
+        display: flex;
+        align-items: center;
+        .checkbox {
+          width: 40px;
+        }
+      }
+      #choose-country {
+        display: flex;
+        justify-content: space-around;
+        .text {
+          height: 4rem;
+          width: 21rem;
+          border: none;
+          border-bottom: 1px solid grey;
+          margin-right: 3px;
+        }
+        ::placeholder {
+          font-size: 1.6rem;
+        }
+
+        button {
+          @include buttons(#2c69e1, 10px, white, 20%, 3rem);
+        }
+      }
+    }
+  }
+}

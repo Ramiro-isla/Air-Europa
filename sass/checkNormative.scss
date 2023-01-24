@@ -1,0 +1,23 @@
+section {
+  background-color: #00fff0;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  #check-normative {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 1rem;
+      margin: 0 10px;
+      object-fit: contain;
+      background: none;
+    }
+    p {
+      color: #154e83;
+      a {
+        color: blue;
+      }
+    }
+  }
+}

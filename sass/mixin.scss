@@ -1,0 +1,32 @@
+@mixin buttons($background,$border-radius, $color, $width,$height) {
+  background: $background;
+  border-radius: $border-radius;
+  border: none;
+  color: $color;
+  width: $width;
+  height: $height;
+  cursor: pointer;
+}
+
+@mixin anchords($padding, $font-size) {
+  border-radius: 5px;
+  border: none;
+  color: black;
+  padding: $padding;
+  margin: 10px;
+  font-size: $font-size;
+}
+
+@mixin ul-element {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+@mixin li-element($width) {
+  border-right: 1px solid gray;
+  width: $width;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
