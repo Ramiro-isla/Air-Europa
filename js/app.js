@@ -1,10 +1,10 @@
-const ulOffert$$ = document.getElementById("ofert-list");
-const ulManageAccount$$ = document.getElementById("manage-account-list");
-const ulBeforeFlying$$ = document.getElementById("before-flying-list");
-const ulExperienceAE$$ = document.getElementById("experience-AE-list");
-const ulHelp$$ = document.getElementById("help-list");
-const ulAESum$$ = document.getElementById("AE-sum-list");
-const ulMyAccount$$ = document.getElementById("my-account-list");
+const ulOffert$$ = document.querySelector(".ofert-list");
+const ulManageAccount$$ = document.querySelector(".manage-account-list");
+const ulBeforeFlying$$ = document.querySelector(".before-flying-list");
+const ulExperienceAE$$ = document.querySelector(".experience-AE-list");
+const ulHelp$$ = document.querySelector(".help-list");
+const ulAESum$$ = document.querySelector(".AE-sum-list");
+const ulMyAccount$$ = document.querySelector(".my-account-list");
 
 function navbarclick(ul) {
   if (ul.style.display === "none") {
@@ -14,8 +14,8 @@ function navbarclick(ul) {
   }
 }
 
-const element1 = document.getElementById("carrousel-element1");
-const element2 = document.getElementById("carrousel-element2");
+const element1 = document.querySelector(".carrousel-element1");
+const element2 = document.querySelector(".carrousel-element2");
 
 function carrousel() {
     if (element2.style.display === "none") {

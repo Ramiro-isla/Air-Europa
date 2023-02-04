@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+
     "sass-watch": "npx sass --watch sass/style.scss:styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramiro-isla/Air-Europa.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.57.1"
-  }
+  "bugs": {
+    "url": "https://github.com/Ramiro-isla/Air-Europa/issues"
+  },
+  "homepage": "https://github.com/Ramiro-isla/Air-Europa#readme"
 }

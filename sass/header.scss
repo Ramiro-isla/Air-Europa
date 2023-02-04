@@ -4,23 +4,24 @@ header {
   display: flex;
   justify-content: center;
 
-  #header-top {
-    width: 70%;
+  .header-top {
+    width: 90%;
+    height: 4rem;
     display: flex;
     align-items: center;
-    #logo-container {
+    .logo-container {
+      padding-left: 20px;
       ul {
         @include ul-element;
       }
     }
-    #options {
+    .options {
       display: flex;
       align-items: center;
-      width: 100%;
+      width: 90%;
       justify-content: flex-end;
       ul {
         @include ul-element;
-        height: 7rem;
 
         .option-item {
           @include li-element(10rem);
@@ -32,7 +33,7 @@ header {
             color: black;
             @include anchords(6% 3% 6% 3%, 0.7em);
             img {
-              width: 15%;
+              width: 16%;
               margin-right: 2px;
               aspect-ratio: 3/2;
               object-fit: contain;
@@ -43,36 +44,45 @@ header {
             background-color: #c7c7c7;
           }
         }
+        #li-align {
+          display: flex;
+          justify-content: flex-end;
+          .a-align{
+            margin: 3px;
+            text-align: center;
+          }
+        }
       }
     }
-    #user-functions {
-      width: 60%;
+    .user-functions {
+      width: 40%;
       ul {
         @include ul-element;
+        justify-content: center;
         li {
-          @include li-element(50%);
+          @include li-element(30%);
           height: 1.5rem;
           display: flex;
           align-items: center;
-          #Check-in {
+          .Check-in {
             color: #b428cd;
           }
         }
         li {
           a {
             text-decoration: none;
-            @include anchords(5% 7% 5% 7%, 1rem);
+            @include anchords(5% 7% 5% 7%, 0.8rem);
           }
           :hover {
-            background-color: #f6f6f6;
+            background-color: #c7c7c7;
           }
         }
-        #button-li {
+        .button-li {
           border-right: none;
 
           display: flex;
           align-items: center;
-          #account {
+          .account {
             @include buttons(#2c69e1, 5px, white, 90%, 2rem);
           }
         }

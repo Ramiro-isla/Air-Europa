@@ -4,29 +4,32 @@ header {
   display: flex;
   justify-content: center;
 }
-header #header-top {
-  width: 70%;
+header .header-top {
+  width: 90%;
+  height: 4rem;
   display: flex;
   align-items: center;
 }
-header #header-top #logo-container ul {
+header .header-top .logo-container {
+  padding-left: 20px;
+}
+header .header-top .logo-container ul {
   list-style: none;
   display: flex;
   align-items: center;
 }
-header #header-top #options {
+header .header-top .options {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 90%;
   justify-content: flex-end;
 }
-header #header-top #options ul {
+header .header-top .options ul {
   list-style: none;
   display: flex;
   align-items: center;
-  height: 7rem;
 }
-header #header-top #options ul .option-item {
+header .header-top .options ul .option-item {
   border-right: 1px solid gray;
   width: 10rem;
   display: flex;
@@ -36,37 +39,46 @@ header #header-top #options ul .option-item {
   display: flex;
   align-items: center;
 }
-header #header-top #options ul .option-item a {
+header .header-top .options ul .option-item a {
   text-decoration: none;
   color: black;
   border-radius: 5px;
   border: none;
   color: black;
   padding: 6% 3% 6% 3%;
-  margin: 10px;
+  margin: 3px;
   font-size: 0.7em;
 }
-header #header-top #options ul .option-item a img {
-  width: 15%;
+header .header-top .options ul .option-item a img {
+  width: 16%;
   margin-right: 2px;
   aspect-ratio: 3/2;
   object-fit: contain;
   mix-blend-mode: color-burn;
 }
-header #header-top #options ul .option-item :hover {
+header .header-top .options ul .option-item :hover {
   background-color: #c7c7c7;
 }
-header #header-top #user-functions {
-  width: 60%;
+header .header-top .options ul #li-align {
+  display: flex;
+  justify-content: flex-end;
 }
-header #header-top #user-functions ul {
+header .header-top .options ul #li-align .a-align {
+  margin: 3px;
+  text-align: center;
+}
+header .header-top .user-functions {
+  width: 40%;
+}
+header .header-top .user-functions ul {
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-header #header-top #user-functions ul li {
+header .header-top .user-functions ul li {
   border-right: 1px solid gray;
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -74,27 +86,27 @@ header #header-top #user-functions ul li {
   display: flex;
   align-items: center;
 }
-header #header-top #user-functions ul li #Check-in {
+header .header-top .user-functions ul li .Check-in {
   color: #b428cd;
 }
-header #header-top #user-functions ul li a {
+header .header-top .user-functions ul li a {
   text-decoration: none;
   border-radius: 5px;
   border: none;
   color: black;
   padding: 5% 7% 5% 7%;
-  margin: 10px;
-  font-size: 1rem;
+  margin: 3px;
+  font-size: 0.8rem;
 }
-header #header-top #user-functions ul li :hover {
-  background-color: #f6f6f6;
+header .header-top .user-functions ul li :hover {
+  background-color: #c7c7c7;
 }
-header #header-top #user-functions ul #button-li {
+header .header-top .user-functions ul .button-li {
   border-right: none;
   display: flex;
   align-items: center;
 }
-header #header-top #user-functions ul #button-li #account {
+header .header-top .user-functions ul .button-li .account {
   background: #2c69e1;
   border-radius: 5px;
   border: none;
@@ -158,38 +170,38 @@ section {
   display: flex;
   align-items: center;
 }
-section #check-normative {
+section .check-normative {
   width: 55%;
   display: flex;
   justify-content: center;
 }
-section #check-normative img {
+section .check-normative img {
   width: 1rem;
   margin: 0 10px;
   object-fit: contain;
   background: none;
 }
-section #check-normative p {
+section .check-normative p {
   color: #154e83;
 }
-section #check-normative p a {
+section .check-normative p a {
   color: blue;
 }
 
-#choose-fligth {
+.choose-fligth {
   background-image: url("https://www.aireuropa.com/dam/aea/home/web/hero-banner/promo/allways-on/hero-banner-Allways-on-23-01-23-1920x650.jpg");
-  height: 650px;
+  height: 600px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-#choose-fligth #carrousel {
+.choose-fligth .carrousel {
   width: 70%;
   display: flex;
   justify-content: space-around;
   margin-bottom: 25px;
 }
-#choose-fligth #carrousel .arrow {
+.choose-fligth .carrousel .arrow {
   background-color: rgb(97, 92, 92);
   border-radius: 50%;
   height: 2.3rem;
@@ -200,17 +212,17 @@ section #check-normative p a {
   color: white;
   font-size: 2rem;
 }
-#choose-fligth #carrousel #carrousel-element1 {
+.choose-fligth .carrousel .carrousel-element1 {
   width: 73rem;
   display: flex;
   flex-direction: column;
 }
-#choose-fligth #carrousel #carrousel-element1 h1 {
+.choose-fligth .carrousel .carrousel-element1 h1 {
   color: white;
   font-size: 2.9rem;
   font-family: "Poppins", sans-serif;
 }
-#choose-fligth #carrousel #carrousel-element1 .buy-now {
+.choose-fligth .carrousel .carrousel-element1 .buy-now {
   background: none;
   border-radius: 5px;
   border: none;
@@ -220,11 +232,11 @@ section #check-normative p a {
   cursor: pointer;
   border: 1px solid white;
 }
-#choose-fligth #carrousel #carrousel-element1 .buy-now:hover {
+.choose-fligth .carrousel .carrousel-element1 .buy-now:hover {
   border: 1px solid grey;
   color: grey;
 }
-#choose-fligth #search-fligth #title-container {
+.choose-fligth .search-fligth .title-container {
   width: 73rem;
   height: 3rem;
   background-color: white;
@@ -233,25 +245,25 @@ section #check-normative p a {
   display: flex;
   align-items: center;
 }
-#choose-fligth #search-fligth #title-container img {
+.choose-fligth .search-fligth .title-container img {
   width: 20px;
   height: 20px;
   margin: 0 3px;
 }
-#choose-fligth #search-fligth #title-container p {
+.choose-fligth .search-fligth .title-container p {
   font-size: 17px;
 }
-#choose-fligth #search-fligth #search-fligth {
+.choose-fligth .search-fligth .search-fligth {
   background-color: white;
   border-radius: 0 0 5px 5px;
   height: 15rem;
 }
-#choose-fligth #search-fligth #search-fligth #selection-bar {
+.choose-fligth .search-fligth .search-fligth .selection-bar {
   height: 50%;
   display: flex;
   justify-content: space-around;
 }
-#choose-fligth #search-fligth #search-fligth #selection-bar #fligth-mode {
+.choose-fligth .search-fligth .search-fligth .selection-bar .fligth-mode {
   color: #2c69e1;
   font-weight: bold;
   border-radius: 5px;
@@ -259,31 +271,31 @@ section #check-normative p a {
   list-style: none;
   display: flex;
 }
-#choose-fligth #search-fligth #search-fligth #selection-bar #fligth-mode .fligth-item {
+.choose-fligth .search-fligth .search-fligth .selection-bar .fligth-mode .fligth-item {
   margin: 5px;
 }
-#choose-fligth #search-fligth #search-fligth div {
+.choose-fligth .search-fligth .search-fligth div {
   display: flex;
   align-items: center;
 }
-#choose-fligth #search-fligth #search-fligth div .checkbox {
+.choose-fligth .search-fligth .search-fligth div .checkbox {
   width: 40px;
 }
-#choose-fligth #search-fligth #search-fligth #choose-country {
+.choose-fligth .search-fligth .search-fligth .choose-country {
   display: flex;
   justify-content: space-around;
 }
-#choose-fligth #search-fligth #search-fligth #choose-country .text {
+.choose-fligth .search-fligth .search-fligth .choose-country .text {
   height: 4rem;
   width: 21rem;
   border: none;
   border-bottom: 1px solid grey;
   margin-right: 3px;
 }
-#choose-fligth #search-fligth #search-fligth #choose-country ::placeholder {
+.choose-fligth .search-fligth .search-fligth .choose-country ::placeholder {
   font-size: 1.6rem;
 }
-#choose-fligth #search-fligth #search-fligth #choose-country button {
+.choose-fligth .search-fligth .search-fligth .choose-country button {
   background: #2c69e1;
   border-radius: 10px;
   border: none;
@@ -293,14 +305,14 @@ section #check-normative p a {
   cursor: pointer;
 }
 
-#buttons-fligth {
+.buttons-fligth {
   background-color: #f6f6f6;
   height: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#buttons-fligth button {
+.buttons-fligth button {
   margin: 10px;
   display: flex;
   align-items: center;
