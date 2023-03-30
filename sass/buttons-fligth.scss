@@ -12,7 +12,55 @@
     align-items: center;
     justify-content: center;
     @include buttons(white, 10px, #2c69e1, 20%, 4rem);
-    border: 1px solid black;
-
+    font-weight: bolder;
+    font-size: large;
+    box-shadow: 1px 1px 10px #c7c7c7;
+  }
+  :hover {
+    background-color: #c7c7c7;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .buttons-fligth {
+    height: 10rem;
+    button {
+      margin-top: 50px;
+      @include buttons(white, 10px, #2c69e1, 27%, 4rem);
+      span {
+        width: 63%;
+      }
+    }
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .buttons-fligth {
+    height: 13rem;
+    button {
+      margin-top: 90px;
+      @include buttons(white, 10px, #2c69e1, 27%, 4rem);
+      span {
+        width: 63%;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .buttons-fligth {
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    button {
+      margin-top: 15px;
+      @include buttons(white, 10px, #2c69e1, 93%, 4rem);
+      span {
+        width: 63%;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .buttons-fligth {
+    margin-top: 30px;
   }
 }

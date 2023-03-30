@@ -1,12 +1,13 @@
 section {
   background-color: #00fff0;
-  height: 4rem;
+  height: 3.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   .check-normative {
-    width: 55%;
+    width: 86%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     img {
       width: 1rem;
       margin: 0 10px;
@@ -15,9 +16,37 @@ section {
     }
     p {
       color: #154e83;
+      font-size: 14px;
+      margin-bottom: 0;
       a {
         color: blue;
       }
     }
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  section {
+    .check-normative {
+      width: 99%;
+    }
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  section {
+    .check-normative {
+      width: 86%;
+    }
+  }
+}
+@media (max-width: 425px) {
+  section {
+    .check-normative {
+      width: 90%;
+    }
+  }
+}
+@media (max-width: 320px) {
+  section {
+    height: 5rem;
   }
 }

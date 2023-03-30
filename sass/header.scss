@@ -3,90 +3,303 @@
 header {
   display: flex;
   justify-content: center;
-
+  .btn-primary {
+    --bs-btn-bg: #fff;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #fff;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-bg: #fff;
+    --bs-btn-disabled-border-color: #fff;
+    display: none;
+  }
   .header-top {
-    width: 90%;
-    height: 4rem;
     display: flex;
     align-items: center;
-    .logo-container {
-      padding-left: 20px;
-      ul {
-        @include ul-element;
+    width: 86%;
+    margin: 15px 0 5px 0;
+  }
+  .logo-container {
+    ul {
+      @include ul-element;
+      padding-left: 0;
+      li {
+        margin-right: 15px;
       }
     }
-    .options {
-      display: flex;
-      align-items: center;
-      width: 90%;
-      justify-content: flex-end;
-      ul {
-        @include ul-element;
+  }
+  .options {
+    display: flex;
+    align-items: center;
+    width: 87%;
+    justify-content: flex-end;
+    ul {
+      @include ul-element;
 
-        .option-item {
-          @include li-element(10rem);
-          height: 1.5rem;
-          display: flex;
-          align-items: center;
-          a {
-            text-decoration: none;
-            color: black;
-            @include anchords(6% 3% 6% 3%, 0.7em);
-            img {
-              width: 16%;
-              margin-right: 2px;
-              aspect-ratio: 3/2;
-              object-fit: contain;
-              mix-blend-mode: color-burn;
+      .option-item {
+        @include li-element(10rem);
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        .a-align {
+          text-decoration: none;
+          color: black;
+          @include anchords(6% 3% 6% 3%, 0.7em);
+          img {
+            width: 16%;
+            margin-right: 2px;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+          }
+        }
+        .a-align:hover {
+          background-color: #c7c7c7;
+        }
+      }
+      #manage-reservation-li {
+        border: none;
+      }
+      #li-align {
+        display: flex;
+        justify-content: flex-end;
+        .a-align {
+          margin: 3px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .user-functions {
+    width: 40%;
+    ul {
+      @include ul-element;
+      justify-content: center;
+      li {
+        @include li-element(33%);
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        .Check-in {
+          color: #b428cd;
+        }
+      }
+      li {
+        a {
+          text-decoration: none;
+          @include anchords(8% 20% 8% 20%, 0.8rem);
+        }
+        a:hover {
+          background-color: #c7c7c7;
+        }
+      }
+      .button-li {
+        border-right: none;
+
+        display: flex;
+        align-items: center;
+        .account {
+          @include buttons(#2c69e1, 5px, white, 100%, 2rem);
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    .header-top {
+      width: 98%;
+      .options {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    width: 100%;
+    #btn-primary {
+      display: block;
+      width: 60%;
+      img {
+        width: 1.3rem;
+      }
+    }
+    .header-top {
+      width: 956%;
+      .logo-container {
+        align-self: flex-end;
+        .logo {
+          width: 6rem;
+        }
+        .logo-2 {
+          width: 1.5rem;
+        }
+      }
+      #options {
+        display: none;
+      }
+      .user-functions {
+        width: 77%;
+        display: flex;
+        justify-content: end;
+        ul {
+          width: 68%;
+          li {
+            margin: -10px;
+            width: 9rem;
+          }
+          li {
+            a {
+              text-decoration: none;
+              @include anchords(8% 20% 8% 20%, 0.8rem);
             }
           }
-          :hover {
-            background-color: #c7c7c7;
-          }
-        }
-        #li-align {
-          display: flex;
-          justify-content: flex-end;
-          .a-align{
-            margin: 3px;
-            text-align: center;
+          .button-li {
+            border-right: none;
+            display: flex;
+            .account {
+              @include buttons(#2c69e1, 5px, white, 82%, 2rem);
+            }
           }
         }
       }
     }
-    .user-functions {
-      width: 40%;
-      ul {
-        @include ul-element;
-        justify-content: center;
-        li {
-          @include li-element(30%);
-          height: 1.5rem;
-          display: flex;
-          align-items: center;
-          .Check-in {
-            color: #b428cd;
-          }
-        }
-        li {
-          a {
-            text-decoration: none;
-            @include anchords(5% 7% 5% 7%, 0.8rem);
-          }
-          :hover {
-            background-color: #c7c7c7;
-          }
-        }
-        .button-li {
-          border-right: none;
+  }
+}
 
-          display: flex;
-          align-items: center;
-          .account {
-            @include buttons(#2c69e1, 5px, white, 90%, 2rem);
+@media (max-width: 425px) {
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    width: 70%;
+    #btn-primary {
+      display: block;
+      width: 90%;
+      img {
+        width: 1.3rem;
+      }
+    }
+    .header-top {
+      width: 96%;
+      .logo-container {
+        align-self: flex-end;
+        .logo {
+          width: 6rem;
+        }
+        .logo-2 {
+          width: 1.5rem;
+        }
+      }
+      #options {
+        display: none;
+      }
+      .user-functions {
+        width: 77%;
+        display: flex;
+        justify-content: end;
+        ul {
+          width: 70%;
+          li {
+            margin: -10px;
+            width: 9rem;
+            .Check-in {
+              color: #b428cd;
+              padding: 0;
+              margin-left: 0;
+            }
+          }
+          .register {
+            display: none;
+          }
+          .button-li {
+            border-right: none;
+            display: flex;
+            .account {
+              @include buttons(#2c69e1, 5px, white, 82%, 2rem);
+            }
           }
         }
       }
     }
+  }
+}
+@media (max-width: 375px) {
+  header {
+    #btn-primary {
+      display: block;
+      width: 15%;
+    }
+    .header-top {
+      width: 80%;
+
+      .logo-container {
+        align-self: flex-end;
+        ul {
+          li {
+            margin-right: 5px;
+            .logo {
+              width: 5rem;
+            }
+            .logo-2 {
+              width: 1rem;
+            }
+          }
+        }
+      }
+      .user-functions {
+        width: 100%;
+        ul {
+          width: 68%;
+          li {
+            margin: -10px;
+            width: 9rem;
+          }
+          li {
+            a {
+              text-decoration: none;
+              @include anchords(8% 20% 8% 20%, 0.8rem);
+            }
+          }
+          .button-li {
+            border-right: none;
+            display: flex;
+            .account {
+              @include buttons(#2c69e1, 5px, white, 82%, 2rem);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  header {
+    #btn-primary {
+      display: block;
+      width: 18%;
+    }
+    .header-top {
+      width: 70%;
+      .user-functions {
+        width: 100%;
+        ul {
+          width: 96%;
+        }
+      }
+    }
+    
   }
 }

@@ -1,47 +1,75 @@
 nav {
-  display: flex;
-  justify-content: center;
-  ul {
-    list-style: none;
-    width: 75%;
+  .nav-container {
     display: flex;
-    justify-content: flex-start;
-    padding: 0;
-    li {
-      width: 11%;
-      text-align: center;
-      button {
-        background: none;
-        border-radius: 5px;
-        border: none;
-        height: 2rem;
-        cursor: pointer;
-        font-size: 12px;
+    justify-content: center;
+    ul {
+      list-style: none;
+      width: 85%;
+      display: flex;
+      background-color: white;
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        width: auto;
+        margin-right: 30px;
+        button {
+          background: none;
+          border: none;
+          height: 2rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+        }
       }
+    }
+  }
+
+  .nav-selector-container {
+    display: flex;
+    justify-content: center;
+    div {
+      width: 85%;
       ul {
+        text-align: center;
+        list-style: none;
+        display: flex;
+        padding: 15px;
         background-color: #f6f6f6;
-        margin: auto;
-        width: 84rem;
-        display: none;
-        margin-left: 3rem;
-        div {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          height: 3rem;
-          width: 90%;
-          margin: 0 10px;
-          li {
-            width: 14%;
-            a {
-              font-size: 0.8rem;
-              cursor: pointer;
-              color: black;
-              text-decoration: none;
-            }
+        li {
+          width: auto;
+          margin-right: 30px;
+          a {
+            font-size: 0.9rem;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
           }
         }
       }
     }
+  }
+}
+#nav-selector {
+  display: none;
+}
+.nav-active {
+  background-color: #f6f6f6;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    .nav-container {
+      ul {
+        width: 98%;
+      }
+    }
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  #nav-container {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  #nav-container {
+    display: none;
   }
 }

@@ -5,26 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
   </head>
   <body>
     <header>
+      <button
+        id="btn-primary"
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >
+        <img src="./assets/hamburguesa.png" alt="" />
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            Backdrop with scrolling
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            Try scrolling the rest of the page to see this option in action.
+          </p>
+        </div>
+      </div>
       <div class="header-top">
         <div class="logo-container">
           <ul>
             <li>
               <a href=""
-                ><img src="/assets/airEuropa-logo.svg" alt="Air Europa Logo"
+                ><img
+                  src="/assets/airEuropa-logo.svg"
+                  alt="Air Europa Logo"
+                  class="logo"
               /></a>
             </li>
             <li>
               <a href=""
-                ><img src="/assets/skyteam-logo.svg" alt="Skyteam logo"
+                ><img
+                  src="./assets/skyteam-logo.svg"
+                  alt="Skyteam logo"
+                  class="logo-2"
               /></a>
             </li>
           </ul>
         </div>
-        <div class="options">
+        <div class="options" id="options">
           <ul>
             <li class="option-item" id="li-align">
               <a href="" class="a-align"
@@ -34,14 +85,14 @@
             </li>
 
             <li class="option-item">
-              <a href=""
+              <a href="" class="a-align"
                 ><img src="/assets/searcher.png" alt="Searcher logo" />
                 Preguntas frecuentes</a
               >
             </li>
 
-            <li class="option-item">
-              <a href=""
+            <li class="option-item" id="manage-reservation-li">
+              <a href="" class="a-align"
                 ><img
                   src="/assets/aeroplane.png"
                   alt="Aeroplane icon"
@@ -53,7 +104,7 @@
         <div class="user-functions">
           <ul>
             <li><a href="" class="Check-in">Check-in</a></li>
-            <li><a href="">Regístrate</a></li>
+            <li class="register"><a href="">Regístrate</a></li>
             <li class="button-li">
               <button class="account">Mi cuenta</button>
             </li>
@@ -62,151 +113,225 @@
       </div>
     </header>
     <nav>
-      <ul>
-        <li>
-          <button onclick="navbarclick(ulOffert$$);">Ofertas</button>
-          <ul class="ofert-list">
-            <div>
-              <li><a href="">Mejores precios desde España</a></li>
-              <li><a href="">Vuelos a Mallorca</a></li>
-              <li><a href="">Vuelos a Madrid</a></li>
-              <li><a href="">Vuelos a Tenerife</a></li>
-              <li><a href="">Vuelos a Nueva York</a></li>
-              <li><a href="">Vuelos a Gran Canaria</a></li>
-            </div>
-          </ul>
-        </li>
-        <li>
-          <button onclick="navbarclick(ulManageAccount$$);">
-            Gestiona tu cuenta
-          </button>
-          <ul class="manage-account-list">
-            <div>
-              <li><a href="">Accede a tu reserva</a></li>
-              <li><a href="">Añadir Extras</a></li>
-              <li><a href="">Cambio Vuelo</a></li>
-              <li><a href="">Check in online</a></li>
-              <li><a href="">Solicitar Factura</a></li>
-              <li><a href="">Asistencia movilidad reducida</a></li>
-              <li><a href="">Contratar seguros</a></li>
-              <li><a href="">Imprimir Billete de Tren</a></li>
-            </div>
-          </ul>
-        </li>
-        <li>
-          <button onclick="navbarclick(ulBeforeFlying$$);">
-            Antes de volar
-          </button>
-          <ul class="before-flying-list">
-            <div>
-              <li><a href="">Información para volar</a></li>
-              <li><a href="">Equipaje</a></li>
-              <li><a href="">Pasajeros</a></li>
-              <li><a href="">Seguridad a bordo</a></li>
-              <li><a href="">Documentación</a></li>
-              <li><a href="">Condiciones</a></li>
-              <li><a href="">Tarifas y servicios</a></li>
-              <li><a href="">Comunicados</a></li>
-              <li><a href="">COVID-19</a></li>
-            </div>
-          </ul>
-        </li>
-        <li>
-          <button onclick="navbarclick(ulExperienceAE$$);">
-            Experiencia Air Europa
-          </button>
-          <ul class="experience-AE-list">
-            <div>
-              <li><a href="">Destinos</a></li>
-              <li><a href="">Servicios</a></li>
-              <li><a href="">Tarifas</a></li>
-              <li><a href="">Flota</a></li>
-              <li><a href="">Salas VIP</a></li>
-              <li><a href="">Vuela en Premium</a></li>
-              <li><a href="">Business</a></li>
-              <li><a href="">Información corporativa</a></li>
-              <li><a href="">Alianzas</a></li>
-            </div>
-          </ul>
-        </li>
-        <li>
-          <button onclick="navbarclick(ulHelp$$);">¿Necesitas ayuda?</button>
-          <ul class="help-list">
-            <div>
-              <li><a href="">Atención al cliente</a></li>
-              <li><a href="">Consulta tu reserva</a></li>
-              <li><a href="">Volar en grupo</a></li>
-              <li><a href="">Reclamaciones,felicitaciones,sugerencias</a></li>
-              <li><a href="">Preguntas frecuentes</a></li>
-            </div>
-          </ul>
-        </li>
+      <div class="nav-container" id="nav-container">
+        <ul>
+          <li>
+            <button type="reset" onclick="navbarclick(ulOffert$$);">
+              Ofertas
+            </button>
+          </li>
+          <li>
+            <button onclick="navbarclick(ulManageAccount$$);">
+              Gestiona tu cuenta
+            </button>
+          </li>
+          <li>
+            <button onclick="navbarclick(ulBeforeFlying$$);">
+              Antes de volar
+            </button>
+          </li>
+          <li>
+            <button onclick="navbarclick(ulExperienceAE$$);">
+              Experiencia Air Europa
+            </button>
+          </li>
+          <li>
+            <button onclick="navbarclick(ulHelp$$);">¿Necesitas ayuda?</button>
+          </li>
 
-        <li>
-          <button onclick="navbarclick(ulAESum$$);">Air Europa SUMA</button>
-          <ul class="AE-sum-list">
-            <div>
-              <li><a href="">Air Europa SUMA</a></li>
-              <li><a href="">Mi Cuenta</a></li>
-              <li><a href="">Nuestro Programa</a></li>
-              <li><a href="">Cómo conseguir Millas</a></li>
-              <li><a href="">Cómo utilizar Millas</a></li>
-              <li><a href="">Preguntas frecuentes</a></li>
-              <li><a href="">Atención al cliente</a></li>
-            </div>
+          <li>
+            <button onclick="navbarclick(ulAESum$$);">Air Europa SUMA</button>
+          </li>
+          <li>
+            <button onclick="navbarclick(ulMyAccount$$);">Mi cuenta</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-selector-container">
+        <div class="ofert-list" id="nav-selector">
+          <ul>
+            <li><a href="">Mejores precios desde España</a></li>
+            <li><a href="">Vuelos a Mallorca</a></li>
+            <li><a href="">Vuelos a Madrid</a></li>
+            <li><a href="">Vuelos a Tenerife</a></li>
+            <li><a href="">Vuelos a Nueva York</a></li>
+            <li><a href="">Vuelos a Gran Canaria</a></li>
           </ul>
-        </li>
-        <li>
-          <button onclick="navbarclick(ulMyAccount$$);">Mi cuenta</button>
-          <ul class="my-account-list">
-            <div>
-              <li><a href="">Mi Perfil</a></li>
-              <li><a href="">Mis Millas</a></li>
-              <li><a href="">Mis Reservas</a></li>
-              <li><a href="">Mis Beneficios</a></li>
-              <li><a href="">Solicitar Millas no anotadas</a></li>
-            </div>
+        </div>
+
+        <div class="manage-account-list" id="nav-selector">
+          <ul>
+            <li><a href="">Accede a tu reserva</a></li>
+            <li><a href="">Añadir Extras</a></li>
+            <li><a href="">Cambio Vuelo</a></li>
+            <li><a href="">Check in online</a></li>
+            <li><a href="">Solicitar Factura</a></li>
+            <li><a href="">Asistencia movilidad reducida</a></li>
+            <li><a href="">Contratar seguros</a></li>
+            <li><a href="">Imprimir Billete de Tren</a></li>
           </ul>
-        </li>
-      </ul>
+        </div>
+
+        <div class="before-flying-list" id="nav-selector">
+          <ul>
+            <li><a href="">Información para volar</a></li>
+            <li><a href="">Equipaje</a></li>
+            <li><a href="">Pasajeros</a></li>
+            <li><a href="">Seguridad a bordo</a></li>
+            <li><a href="">Documentación</a></li>
+            <li><a href="">Condiciones</a></li>
+            <li><a href="">Tarifas y servicios</a></li>
+            <li><a href="">Comunicados</a></li>
+            <li><a href="">COVID-19</a></li>
+          </ul>
+        </div>
+
+        <div class="experience-AE-list" id="nav-selector">
+          <ul>
+            <li><a href="">Destinos</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Tarifas</a></li>
+            <li><a href="">Flota</a></li>
+            <li><a href="">Salas VIP</a></li>
+            <li><a href="">Vuela en Premium</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">Información corporativa</a></li>
+            <li><a href="">Alianzas</a></li>
+          </ul>
+        </div>
+
+        <div class="help-list" id="nav-selector">
+          <ul>
+            <li><a href="">Atención al cliente</a></li>
+            <li><a href="">Consulta tu reserva</a></li>
+            <li><a href="">Volar en grupo</a></li>
+            <li><a href="">Reclamaciones,felicitaciones,sugerencias</a></li>
+            <li><a href="">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div class="AE-sum-list" id="nav-selector">
+          <ul>
+            <li><a href="">Air Europa SUMA</a></li>
+            <li><a href="">Mi Cuenta</a></li>
+            <li><a href="">Nuestro Programa</a></li>
+            <li><a href="">Cómo conseguir Millas</a></li>
+            <li><a href="">Cómo utilizar Millas</a></li>
+            <li><a href="">Preguntas frecuentes</a></li>
+            <li><a href="">Atención al cliente</a></li>
+          </ul>
+        </div>
+
+        <div class="my-account-list" id="nav-selector">
+          <ul>
+            <li><a href="">Mi Perfil</a></li>
+            <li><a href="">Mis Millas</a></li>
+            <li><a href="">Mis Reservas</a></li>
+            <li><a href="">Mis Beneficios</a></li>
+            <li><a href="">Solicitar Millas no anotadas</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <section>
       <div class="check-normative">
         <img src="/assets/info-icon.png" alt="infoicon" />
         <p>
-          Antes de viajar recuerda consultar
-          <a href="">las normas de tu destino</a>.
+          Consulta
+          <a href="">aquí</a>
+          la documentación identificativa y sanitaria que necesitas para tu
+          viaje.
         </p>
       </div>
     </section>
-    <section class="choose-fligth">
+    <section class="choose-fligth-section">
       <article class="carrousel">
-        <!-- <div class="arrow" onclick="carrousel()">&#60</div> -->
-        <div class="carrousel-element1">
-          <h1>El Invierno se pasa volando</h1>
-          <button class="buy-now">¡Compra ya!</button>
+        <div class="swiper swiper-hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="carrousel-element1">
+                <h1>La mejor manera de evitar la tentación, es caer en ella</h1>
+                <p class="p-off">La mejor manera de
+                   evitar la tentación, es...</p>
+                <button class="buy-now">¡Vuela!</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="carrousel-element2">
+                <div class="flight-container">
+                  <h3>Península, Baleares y Canarias</h3>
+                  <p>desde</p>
+                  <div>
+                    <span>19</span>
+                    <div>
+                      <p>EUR</p>
+                      <p>por trayecto</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flight-container">
+                  <h3>Europa</h3>
+                  <p>desde</p>
+                  <div>
+                    <span>29</span>
+                    <div>
+                      <p>EUR</p>
+                      <p>por trayecto</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flight-container">
+                  <h3>Estados Unidos</h3>
+                  <p>desde</p>
+                  <div>
+                    <span>226</span>
+                    <div>
+                      <p>EUR</p>
+                      <p>por trayecto</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flight-container" id="flight-container-off">
+                  <h3>Caribe, Centro y Sudamérica</h3>
+                  <p>desde</p>
+                  <div>
+                    <span>309</span>
+                    <div>
+                      <p>EUR</p>
+                      <p>por trayecto</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="buy-now">¡Vuela!</button>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <!-- <div class="arrow" onclick="carrousel()">&#62</div> -->
       </article>
-      <article class="search-fligth">
+      <article class="search-fligth-container">
         <div class="title-container">
           <img src="./assets/aeroplane-takeoff.png" alt="aeroplane takeoff" />
           <p>VUELOS</p>
         </div>
         <div class="search-fligth">
-          <div class="selection-bar">
-            <ul class="fligth-mode">
-              <li class="fligth-item">Ida-Vuelta</li>
-              <li class="fligth-item">Sólo ida</li>
-              <li class="fligth-item">Multidestinos</li>
-            </ul>
+          <div>
+            <div class="selection-bar">
+              <ul class="fligth-mode">
+                <li class="fligth-item" id="fligth-item-active">Ida-Vuelta</li>
+                <li class="fligth-item">Sólo ida</li>
+                <li class="fligth-item">Multidestinos</li>
+              </ul>
+            </div>
 
             <div>
               <input type="checkbox" class="checkbox" />
               <label for="">Pagar con Bono AE o VALE </label>
               <img src="./assets/ae-icon.png" alt="Air-Europa-ico" />
             </div>
-            <div>
+            <div class="container-off">
               <input type="checkbox" class="checkbox" />
               <label for="">Utilizar mis Millas SUMA</label>
             </div>
@@ -221,17 +346,27 @@
     </section>
     <section class="buttons-fligth">
       <button>
-        <img src="./assets/check-in.png" alt="check-in icon" />Haz Check-in
+        <img src="./assets/check-in.png" alt="check-in icon" /><span
+          >Haz Check-in</span
+        >
       </button>
       <button>
-        <img src="./assets/reservation.png" alt="reservation icon" />Gestiona tu
-        reserva
+        <img src="./assets/reservation.png" alt="reservation icon" /><span
+          >Gestiona tu reserva</span
+        >
       </button>
       <button>
-        <img src="./assets/fligth-info.png" alt="info fligth icon" />Información
-        de Vuelos
+        <img src="./assets/fligth-info.png" alt="info fligth icon" /><span
+          >Información de Vuelos</span
+        >
       </button>
     </section>
-    <script src="/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/app.js" type="module"></script>
   </body>
 </html>
